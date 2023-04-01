@@ -1,53 +1,7 @@
-
-/* Let the main image sit under navbar */
-.nav-fix {
-    position: absolute;
+.main-content {
+    width: 100%;
+    background-color: lightpink;
 }
-
-/* Background image of the main page */
-.main-background-img {
-    position: absolute;
-    width: 100vw;
-    height: 800px;
-    z-index: -1;
-}
-
-/* The cover to cover bottom area of background image with linear gradient color */
-.cover-linear {
-    width: 100vw;
-    height: 800px;
-    background-image: linear-gradient(to bottom, rgba(36,35,23,0),rgba(36,35,23,0),rgba(36,35,23,0),rgba(36,35,23,0.2), rgba(36,35,23,1));
-    z-index: 0;
-}
-
-/* The background of rest of the main page */
-.main-bg {
-    width: 100vw;
-    background-color: #242317;
-    display: flex;
-    justify-content: center;
-}
-
-/* Class of the slogan */
-.main-slg {
-    position: absolute;
-}
-
-.main-slg h2, h3 {
-    color: #FFFFFF;
-    position: relative;
-    margin-left: 240px;
-}
-
-.main-slg h2 {
-    margin-top: 440px;
-}
-
-.main-slg h3 {
-    margin-top: -50px;
-}
-/* End */
-
 
 .main-container {
     width: 65%;
