@@ -50,7 +50,7 @@
     width: 1px;
     background-color: #EEF2F0;
     position: absolute;
-    margin-left: -7vw;
+    margin-left: -8%;
 }
 
 .navbar ul{
@@ -79,7 +79,6 @@
 
 .navbar a {
     color: #EEF2F0;
-    letter-spacing: 0.125px;
 }
 
 .dropWrap {
@@ -92,7 +91,7 @@
 }
 
 .dropWrap ul {
-    width: 100%;
+    width: 113%;
     height: fit-content;
     margin-top: clamp(23px, 2.7vw, 50px);
     padding: 0;
@@ -108,15 +107,9 @@
 }
 
 .dropWrap li {
-    /*height: 100%;*/
     height: clamp(40px, 3.5vw, 65px);
     display: flex;
     text-align: center;
-}
-
-.dropWrap a {
-    color: #EEF2F0;
-    font-size: clamp(0.7rem, 1.1vw, 1.25rem);
 }
 
 .dropWrap li:hover {
