@@ -4,60 +4,39 @@ body {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
+
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+    color: #555A58;
 }
 
 h2 {
-    font-family: 'Brygada 1918', serif;
-    font-size: 72px;
-    color: #000000;
-    font-weight: lighter;
+    font-family: 'Arial', serif;
+    font-size: clamp(1.25rem, 2vw, 2.5rem);
 }
 
 h3 {
-    font-family: 'Brygada 1918', serif;
-    font-size: 40px;
-    color: #000000;
-    font-weight: lighter;
+    font-family: 'Arial', serif;
+    font-size: clamp(1rem, 1.6vw, 2rem);
 }
 
 h4 {
-    font-family: 'Brygada 1918', serif;
-    font-size: 32px;
-    color: #000000;
-    font-weight: lighter;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.75rem, 1.2vw, 1.5rem);
 }
 
 h5 {
-    font-family: 'Brygada 1918', serif;
-    font-size: 24px;
-    color: #000000;
-    font-weight: lighter;
-}
-
-h6 {
-    font-family: 'Brygada 1918', serif;
-    font-size: 16px;
-    color: #000000;
-    font-weight: lighter;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.625rem, 1vw, 1.25rem);
 }
 
 p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-    color: #000000;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 
 a {
     font-family: 'Arial', serif;
-    font-size: 1.25rem;
-    color: #000000;
+    font-size: clamp(0.75rem, 1.2vw, 1.5rem);
     text-decoration: none;
-    /*font-weight: lighter;*/
-}
-
-.img-card {
-    width: 100%;
-    padding: 15px;
-    background-color: #FFFFFF;
-    border-radius: 16px;
 }

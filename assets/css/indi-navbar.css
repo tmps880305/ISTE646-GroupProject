@@ -93,7 +93,7 @@
 .dropWrap ul {
     width: 113%;
     height: fit-content;
-    margin-top: clamp(23px, 2.7vw, 50px);
+    margin-top: clamp(23px, 2.8vw, 53px);
     padding: 0;
     opacity: 0;
     position: absolute;
