@@ -1,0 +1,124 @@
+
+/* Let the main image sit under navbar */
+.nav-fix {
+    position: absolute;
+}
+
+/* Background image of the main page */
+.main-background-img {
+    position: absolute;
+    width: 100vw;
+    height: 800px;
+    z-index: -1;
+}
+
+/* The cover to cover bottom area of background image with linear gradient color */
+.cover-linear {
+    width: 100vw;
+    height: 800px;
+    background-image: linear-gradient(to bottom, rgba(36,35,23,0),rgba(36,35,23,0),rgba(36,35,23,0),rgba(36,35,23,0.2), rgba(36,35,23,1));
+    z-index: 0;
+}
+
+/* The background of rest of the main page */
+.main-bg {
+    width: 100vw;
+    background-color: #242317;
+    display: flex;
+    justify-content: center;
+}
+
+/* Class of the slogan */
+.main-slg {
+    position: absolute;
+}
+
+.main-slg h2, h3 {
+    color: #FFFFFF;
+    position: relative;
+    margin-left: 240px;
+}
+
+.main-slg h2 {
+    margin-top: 440px;
+}
+
+.main-slg h3 {
+    margin-top: -50px;
+}
+/* End */
+
+
+.main-container {
+    width: 65%;
+    margin-top: 320px;
+    margin-bottom: 160px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 320px;
+}
+
+.main-list-card {
+    width: 100%;
+    height: 680px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-list-card img {
+    height: 100%;
+    width: 43%;
+    /* aspect-ratio: 3/4; */
+}
+
+.main-list-text {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: darkmagenta; */
+}
+
+.main-list-text h2, h6, p {
+    color: #FFFFFF;
+}
+
+.main-list-text h2 {
+    width: 90%;
+}
+
+.main-list-text p {
+    width: 50%;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+.main-list-text h2, p {
+    margin-left: 20px;
+} 
+
+.arrow {
+    border: solid #FFFFFF;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.main-list-text-rt {
+    align-items: end;
+    text-align: right;
+}
+
+.main-list-text-rt div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
