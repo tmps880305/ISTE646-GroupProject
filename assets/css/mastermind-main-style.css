@@ -30,6 +30,11 @@ h5 {
     font-size: clamp(0.625rem, 1vw, 1.25rem);
 }
 
+h6 {
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+}
+
 p {
     font-family: 'Arial', serif;
     font-size: clamp(0.5rem, 0.8vw, 1rem);

@@ -4,14 +4,10 @@
 }
 
 .main-container {
-    width: 65%;
-    margin-top: 320px;
-    margin-bottom: 160px;
-    padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 320px;
 }
 
 .main-list-card {

@@ -1,0 +1,91 @@
+.scorebar-container {
+    width: 100%;
+    height: clamp(45px, 4.2vw, 80px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.scorebar {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.scorebar .pick-date {
+    width: 10%;
+    display: flex;
+    border-style: none solid;
+    border-color: #EEF2F0;
+    border-width: 0.5rem;
+    justify-content: center;
+}
+
+.scorebar select {
+    height: fit-content;
+    /*margin: 20% 0;*/
+    align-self: center;
+    padding: 6px;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+    border: none;
+    background-color: #CCD0CF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.scorebar select:focus-visible {
+    outline: none;
+}
+
+
+.teamscore-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.teamscore-card {
+    width: 150px;
+    height: 100%;
+    padding: 0 1%;
+    border-right: 2px solid #EEF2F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #555A58;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.625rem, 1vw, 1.25rem);
+}
+
+.teamscore-card .tmscore-wrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.teamscore-card .tmscore-left {
+    align-items: flex-start;
+}
+
+.teamscore-card .tmscore-right {
+    align-items: flex-end;
+}
+
+.teamscore-card .tmscore-ttl {
+    margin: 10% 0;
+}
+
+.teamscore-card .tmscore-cnt {
+    font-weight: bold;
+}
+
+.teamscore-card .tmscore-loc {
+    color: #999E9C;
+}
