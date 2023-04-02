@@ -1,3 +1,4 @@
+/* Main container for the scorebar */
 .scorebar-container {
     width: 100%;
     height: clamp(45px, 4.2vw, 80px);
@@ -7,6 +8,7 @@
     justify-content: center;
 }
 
+/* To restrict the scorebar in the middle 90% part of page width */
 .scorebar {
     width: 90%;
     height: 100%;
@@ -15,6 +17,7 @@
     display: flex;
 }
 
+/* Container for the box with select input */
 .scorebar .pick-date {
     width: 10%;
     display: flex;
@@ -24,6 +27,7 @@
     justify-content: center;
 }
 
+/* Customize the select input */
 .scorebar select {
     height: fit-content;
     /*margin: 20% 0;*/
@@ -37,17 +41,19 @@
     cursor: pointer;
 }
 
+/* Remove outline when it's focused */
 .scorebar select:focus-visible {
     outline: none;
 }
 
-
+/* The wrap for all teamscore cards */
 .teamscore-wrap {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
+/* Card for each teamscore */
 .teamscore-card {
     width: 150px;
     height: 100%;
@@ -62,6 +68,7 @@
     font-size: clamp(0.625rem, 1vw, 1.25rem);
 }
 
+/* Small boxes inside the card */
 .teamscore-card .tmscore-wrap {
     width: 50%;
     height: 100%;
@@ -70,22 +77,27 @@
     justify-content: space-around;
 }
 
+/* Align items left in the left box */
 .teamscore-card .tmscore-left {
     align-items: flex-start;
 }
 
+/* Align items right in the right box */
 .teamscore-card .tmscore-right {
     align-items: flex-end;
 }
 
+/* Margin for the title */
 .teamscore-card .tmscore-ttl {
     margin: 10% 0;
 }
 
+/* Bold style for the contents */
 .teamscore-card .tmscore-cnt {
     font-weight: bold;
 }
 
+/* Color for 'Location' */
 .teamscore-card .tmscore-loc {
     color: #999E9C;
 }

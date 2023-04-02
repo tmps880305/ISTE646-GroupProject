@@ -81,6 +81,7 @@
 
                 <?php
 
+                // The data should be sent from the database, so I create a DUMMY one for temporary use.
                 $DUMMY_TEAMSCORE_JSON = ['{
                 "time":"3:00 pm", 
                 "team1":{"name":"Team A","score":"115"}, 
@@ -116,6 +117,8 @@
                 "location":"Rochester"}'
                 ];
 
+
+                // The for loop will dump all data from the array, and create a score 'card' for each set.
                 for ($i = 0; $i < count($DUMMY_TEAMSCORE_JSON); $i++) {
                     $get = json_decode($DUMMY_TEAMSCORE_JSON[$i], true);
                     echo '<div class="teamscore-card">
@@ -132,7 +135,6 @@
                 </div>';
                 }
 
-
                 ?>
 
 
@@ -140,11 +142,15 @@
 
         </div>
     </div>
+
+    <!--  Placeholder for main contents  -->
+    <div class="main-content">
+        <h2>MainPage</h2>
+    </div>
+
 </div>
 
-<div class="main-content">
-    <h2>MainPage</h2>
-</div>
+
 
 <footer class="footer">
     <div>
