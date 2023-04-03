@@ -117,10 +117,8 @@
                 "location":"Rochester"}'
                 ];
 
-
-                // The for loop will dump all data from the array, and create a score 'card' for each set.
-                for ($i = 0; $i < count($DUMMY_TEAMSCORE_JSON); $i++) {
-                    $get = json_decode($DUMMY_TEAMSCORE_JSON[$i], true);
+                foreach ($DUMMY_TEAMSCORE_JSON as $key => $teamscore) {
+                    $get = json_decode($teamscore, true);
                     echo '<div class="teamscore-card">
                     <div class="tmscore-wrap tmscore-left">
                         <div class="tmscore-ttl">' . $get["time"] . '</div>
@@ -149,7 +147,6 @@
     </div>
 
 </div>
-
 
 
 <footer class="footer">
