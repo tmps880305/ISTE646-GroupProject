@@ -117,6 +117,7 @@
                 "location":"Rochester"}'
                 ];
 
+                // Dump data from the array until it's empty
                 foreach ($DUMMY_TEAMSCORE_JSON as $key => $teamscore) {
                     $get = json_decode($teamscore, true);
                     echo '<div class="teamscore-card">
