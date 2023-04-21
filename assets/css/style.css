@@ -1,0 +1,547 @@
+/******************** main page  *****************************/
+
+.body-main-container{
+    /*display: grid;*/
+    /*grid-auto-rows:190px auto 1fr ;*/
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+/********************* main content Section *****************************************/
+/* Placeholder for main contents */
+.main-content {
+    width: 100%;
+    display: flex;
+    /*display: grid;*/
+    /*grid-template-columns: 6fr 1fr;*/
+    /* width: 100%; */
+    justify-content: center;
+    margin: 20px 0;
+    /* background-color: lightpink; */
+}
+/* main image */
+.image-container{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img{
+    max-width: 100%;
+    height: 80%
+   
+}
+
+.main-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/* special event container */
+.special-events-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;;
+    width: 100%;
+}
+.events-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    /* height: 60%; */
+    
+}
+
+.events-1{
+    display:flex;
+    flex-direction: column;
+    /* align-items: center;
+    height: 350px; */
+    height: 450px;
+    width: 400px;
+}
+/* Specials event images */
+.events-1 img{
+    width: 100%;
+    height: 65%;
+}
+
+.events-1 img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.events-title{
+    text-align: center;
+}
+
+/* Overview section */
+
+.text-container-title {  
+    width: 100%;
+    text-align: center;
+    background-color: #66AA9C;
+}
+
+.text-container-title h3{
+    margin: 10px 10px;
+    color: white;
+}
+.home-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.text ul{
+    padding-left: 1px;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: row;
+    /* gap: 15px; */
+    justify-content:space-evenly;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    width: 500px;
+    height: 250px;
+    overflow: auto;
+}
+.deadline-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:  20px;
+}
+
+
+/********************* main content side Section *****************************************/
+
+
+
+/********************* main-style *****************************/
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+    color: #555A58;
+}
+
+h2 {
+    font-family: 'Arial', serif;
+    font-size: clamp(1.25rem, 2vw, 2.5rem);
+}
+
+h3 {
+    font-family: 'Arial', serif;
+    font-size: clamp(1rem, 1.6vw, 2rem);
+}
+
+h4 {
+    font-family: 'Arial', serif;
+    font-size: clamp(0.75rem, 1.2vw, 1.5rem);
+}
+
+h5 {
+    font-family: 'Arial', serif;
+    font-size: clamp(0.625rem, 1vw, 1.25rem);
+}
+
+h6 {
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+}
+
+p {
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+}
+
+a {
+    font-family: 'Arial', serif;
+    font-size: clamp(0.75rem, 1.2vw, 1.5rem);
+    text-decoration: none;
+}
+
+
+
+
+/******************** navbar  *****************************/
+/* Container for the whole navbar */
+.nav_container {
+    width: 100%;
+    height: clamp(45px, 4.2vw, 80px);
+    margin: 0;
+    padding: 0;
+    background-color: #66AA9C;
+    display: flex;
+    justify-content: center;
+    /* z-index: 1; */
+    position: fixed;
+}
+
+/* Container for the logo image */
+.logo_container {
+    height: 65px;
+    margin: 0 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Container for nav buttons */
+.navbar {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: #EEF2F0;
+}
+
+
+
+/* The verticle line between 'Teams' and 'Contact'  */
+#nav-divider::before{
+    content: '';
+    display: flex;
+    height: 2rem;
+    width: 1px;
+    background-color: #EEF2F0;
+    position: absolute;
+    margin-left: -8%;
+}
+/**/
+
+
+.navbar ul{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.navbar li {
+    padding: 0 1%;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li:hover {
+    background-color: #75C2B2;
+}
+
+.navbar a {
+    color: #EEF2F0;
+}
+
+/* Wrapper for the dropdown menu */
+.dropWrap {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+/* ul in the dropdown menu */
+.dropWrap ul {
+    width: 113%;
+    height: fit-content;
+    margin-top: clamp(23px, 2.8vw, 53px);
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: #75C2B2;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    z-index: 1;
+}
+
+/* li in the dropdown menu */
+.dropWrap li {
+    height: clamp(40px, 3.5vw, 65px);
+    display: flex;
+    text-align: center;
+}
+
+/* Hover css for items in dropdown menu */
+.dropWrap li:hover {
+    background-color: #EEF2F0;
+}
+
+.dropWrap li:hover a.dropItem {
+    color: #75C2B2;
+}
+
+.dropdown:hover .dropWrap ul {
+    display: flex;
+    opacity: 1;
+    transition-duration: 500ms;
+}
+/******************** scorebar  *****************************/
+/* Main container for the scorebar */
+.scorebar-container {
+    width: 100%;
+    height: clamp(67.5px, 6.3vw, 120px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* position: fixed; */
+    margin-top: 70px;
+    
+}
+
+/* To restrict the scorebar in the middle 90% part of page width */
+.scorebar {
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Container for the box with select input */
+.scorebar .pick-date {
+    width: 10%;
+    display: flex;
+    border-style: none solid;
+    border-color: #EEF2F0;
+    border-width: 0.5rem;
+    justify-content: center;
+}
+
+/* Customize the select input */
+.scorebar select {
+    height: fit-content;
+    /*margin: 20% 0;*/
+    align-self: center;
+    padding: 6px;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.5rem, 0.8vw, 1rem);
+    border: none;
+    background-color: #CCD0CF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Remove outline when it's focused */
+.scorebar select:focus-visible {
+    outline: none;
+}
+
+/* The wrap for all teamscore cards */
+.teamscore-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Card for each teamscore */
+.teamscore-card {
+    width: 150px;
+    height: 100%;
+    padding: 0 1%;
+    border-right: 2px solid #EEF2F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #555A58;
+    font-family: 'Arial', serif;
+    font-size: clamp(0.625rem, 1vw, 1.25rem);
+}
+
+/* Small boxes inside the card */
+.teamscore-card .tmscore-wrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Align items left in the left box */
+.teamscore-card .tmscore-left {
+    align-items: flex-start;
+}
+
+/* Align items right in the right box */
+.teamscore-card .tmscore-right {
+    align-items: flex-end;
+}
+
+/* Margin for the title */
+.teamscore-card .tmscore-ttl {
+    margin: 10% 0;
+}
+
+/* Bold style for the contents */
+.teamscore-card .tmscore-cnt {
+    font-weight: bold;
+}
+
+/* Color for 'Location' */
+.teamscore-card .tmscore-loc {
+    color: #999E9C;
+}
+
+
+/******************** side-section  *****************************/
+.side-section {
+    width: 20%;
+}
+
+/* healines section */
+.headline-title, .quick-links-title{
+    background-color: #75C2B2;
+    text-align: center;
+    color: white;
+}
+
+.headlines-container, .links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+
+/******************** footer  *****************************/
+
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); */
+.footer {
+    width: 100vw;
+    height: 100px;
+    display: block;
+    background-color: #66AA9C;
+}
+
+.footer-container {
+    width: 100%;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    justify-content:center;
+    margin: auto;
+    position: absolute;
+}
+
+.nav-container a {
+    margin: 0 10px;
+    color: #EEF2F0;
+    font-family: 'Arial', serif;
+    font-size: 1.5rem;
+}
+
+.footer a:hover {
+    cursor: pointer;
+}
+
+/* social media icons */
+.social-icons-container{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+
